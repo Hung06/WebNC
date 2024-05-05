@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý tệp tải lên</title>
+    <link rel="stylesheet" type="text/css" href="upload.css">
+</head>
+<body>
+    <h1>Quản lý tệp tải lên</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Tải lên" name="submit">
+    </form>
+    <br>
+    <table id="fileTable">
+        <thead>
+            <tr>
+                <th><a href="?sort=name">Tên tệp</a></th>
+                <th><a href="?sort=type">Loại</a></th>
+                <th><a href="?sort=date">Ngày tải lên</a></th>
+                <th>Kích thước</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php include 'upload.php'; ?>
+        </tbody>
+    </table>
+</body>
+</html>
