@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="login.css">
+    <title>Đăng nhập</title>
+  </head>
+  <body>
+        <div id = "wrapper">
+            <form action="validateuser.php" method="POST" id="form-login">
+                <h1 class = "form-heading"> Form đăng nhập</h1>
+                <div class = "form-group">
+                    <label for="username">Tên đăng nhập:</label><br>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div>
+                    <label for="password">Mật khẩu:</label><br>
+                    <input type="password" id="password" name="password">
+                </div>
+                <input type="submit" value="Đăng nhập" class="form-submit">
+            </form>
+        </div>
+  </body>
