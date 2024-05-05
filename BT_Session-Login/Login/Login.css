@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    color: #223771;
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #222;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.wrapper-login {
+    background: url(http://localhost/WebNC/BT_Session-Login/Login/bg-login.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+.content-login {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.logo-Phenikaa-w {
+    margin-top: 50px;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.img-logo-w {
+    max-height: 90px;
+    vertical-align: middle;
+}
+.position-relative {
+    position: relative!important;
+}
+.content-form-login {
+    min-width: 500px;
+    background: linear-gradient(to top, #b2c2f0, #b2c2f0);
+    border-radius: 30px;
+}
+.content-form-login {
+    padding: 80px 60px;
+    margin-top: 40px;
+}
+.content-form-login:before {
+    position: absolute;
+    background: url(http://localhost/DALN/img/login-line-1.png) top center no-repeat;
+    height: 89px;
+    width: 274px;
+    top: -20px;
+    right: -12px;
+    z-index: 1;
+    content: "";
+    box-sizing: border-box;
+}
+.title-h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #223771!important;
+    text-transform: uppercase!important;
+    text-align: center!important;
+    font-weight: 700!important;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.form-label {
+    margin-bottom: 0.5rem;
+}
+label {
+    display: inline-block;
+}
+.content-form-login .form-label {
+    font-size: 24px;
+    font-weight: 300;
+    position: absolute;
+    left: 15px;
+    top: 6px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control {
+    padding-block: 0 !important;
+    line-height: 14px !important;
+}
+.form-control {
+    border-radius: 6px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    padding-left: 50px;
+    border: 1px solid #acbeec;
+}
+.help-forgot{
+    justify-content: space-between;
+}
+.btn-login {
+    background: #223771;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    height: 48px;
+    line-height: 39px;
+    width: 100%;
+}
+.btn-login:hover {
+    background: #f8843d;
+    border: 1px solid #f8843d;
+}
