@@ -10,4 +10,53 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    protected $repository;
+
+    /**
+     * @param $request
+     * @param $storeFields
+     * @return mixed
+     */
+    public function storeTemplate($request, $storeFields)
+    {
+        // $arr = $request->only($storeFields);
+        foreach ($storeFields as $key => $value) {
+            $arr[$value] = $request->$value;
+        }
+
+        if ($request->images) {
+            $arr['images'] = $request->images;
+        }
+        return $this->repository->doStore($arr);
+    }
+
+    /**
+     * @param $request
+     * @param $updateFields
+     * @return mixed
+     */
+    public function updateTemplate($request, $updateFields)
+    {
+        // $arr = $request->only($updateFields);
+        foreach ($updateFields as $key => $value) {
+            $arr[$value] = $request->$value;
+        }
+
+        if ($request->images) {
+            $arr['images'] = $request->images;
+        }
+        return $this->repository->doUpdate($arr);
+    }
+
+    /**
+     * Delete object with id, override method if you want to delete with other attribute
+     * @param $request
+     * @return mixed
+     */
+    public function deleteTemplate($request)
+    {
+        $id = $request->input('id');
+        return $this->repository->doDelete($id);
+    }
 }
