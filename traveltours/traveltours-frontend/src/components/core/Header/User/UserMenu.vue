@@ -37,7 +37,7 @@
           </v-list-item-content>
         </v-list-item>
         <div class="pa-2">
-          <v-btn block @click="logout()"> Logout </v-btn>
+          <v-btn block @click="logout()"> Đăng Xuất </v-btn>
         </div>
       </v-list>
     </div>
@@ -53,7 +53,7 @@
   export default {
     data: () => ({
       menu: false,
-      items: [{ title: 'My Profile', icon: 'mdi-heart', route: '' }],
+      items: [{ title: 'Hồ Sơ', icon: 'mdi-heart', route: '' }],
 
       H3T_GLOBAL_TRANSITION: APP_GLOBAL_TRANSITION,
     }),

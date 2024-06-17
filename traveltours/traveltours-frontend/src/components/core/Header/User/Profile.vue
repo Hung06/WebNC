@@ -3,7 +3,7 @@
     <v-card-text>
       <v-form ref="form">
         <v-text-field
-          label="Name"
+          label="Họ Và Tên"
           name="name"
           prepend-icon="mdi-account"
           type="text"
@@ -22,7 +22,7 @@
 
         <v-text-field
           id="photo"
-          label="URL of Profile Photo (Optional)"
+          label="Ảnh Đại Diện"
           name="photo"
           prepend-icon="mdi-face-outline"
           type="text"

@@ -4,7 +4,7 @@
       <v-form ref="form">
         <v-text-field
           id="password"
-          label="Password"
+          label="Mật Khẩu Cũ"
           name="password"
           prepend-icon="mdi-lock"
           :type="showPass ? 'text' : 'password'"
@@ -15,7 +15,7 @@
         />
         <v-text-field
           id="passwordConfirm"
-          label="Password Confirm"
+          label="Mật Khẩu Mới"
           name="passwordConfirm"
           prepend-icon="mdi-lock"
           :type="showPass ? 'text' : 'password'"
