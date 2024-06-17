@@ -1,16 +1,18 @@
 <template>
-  <v-select
+  <v-autocomplete
     v-model="selection"
     clearable
     hide-details
     multiple
-    :items="travelStyle"
+    :items="destinations"
     item-text="value"
-    prepend-icon="mdi-hiking"
-    label="Phong cách du lịch"
+    prepend-icon="mdi-map-marker-outline"
+    label="Bạn muốn đi du lịch những nơi nào?"
+    :search-input.sync="search"
     :loading="isOptionListLoading"
     no-data-text=""
     :class="{ 'trn-no-border': hasSelectionValue() }"
+    @change="search = ''"
     @focus="getOptionList"
   >
     <template #selection="{ item }">
@@ -27,20 +29,23 @@
         <span>{{ item.value }} - ( {{ item.count }} tours)</span>
       </v-list-item-content>
     </template>
-  </v-select>
+  </v-autocomplete>
 </template>
 
 <script>
-  import { FETCH_TRAVELSTYLE } from '@/store/type/actions.js';
+  import { FETCH_DESTINATIONS } from '@/store/type/actions.js';
 
   import getPredefinedOption from './mixins/getPredefinedOption';
   import syncSelectionWithUrl from './mixins/syncSelectionWithUrl';
 
   export default {
     mixins: [
-      getPredefinedOption('travelStyle', FETCH_TRAVELSTYLE),
-      syncSelectionWithUrl('travelStyle'),
+      getPredefinedOption('destinations', FETCH_DESTINATIONS),
+      syncSelectionWithUrl('destinations'),
     ],
+    data: () => ({
+      search: null,
+    }),
   };
 </script>
 
