@@ -5,7 +5,7 @@
       <span class="font-weight-medium secondary--text text--darken-1">{{
         selection
       }}</span>
-      | Places:
+      | Địa điểm:
       <span class="font-weight-medium secondary--text text--darken-1">{{
         tourStart
       }}</span>
