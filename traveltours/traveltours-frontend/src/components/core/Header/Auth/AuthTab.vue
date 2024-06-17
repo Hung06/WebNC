@@ -8,18 +8,18 @@
       grow
       dark
     >
-      <v-tab href="#login" class="text-capitalize"> Login </v-tab>
+      <v-tab href="#login" class="text-capitalize"> Đăng Nhập </v-tab>
       <v-tab-item value="login">
         <TrnLogin />
       </v-tab-item>
 
-      <v-tab href="#signup" class="text-capitalize"> Sign Up </v-tab>
+      <v-tab href="#signup" class="text-capitalize"> Đăng Ký </v-tab>
       <v-tab-item value="signup">
         <TrnSignUp />
       </v-tab-item>
 
       <v-tab href="#forgotPassword" class="text-capitalize">
-        Forgot Password
+        Quên Mật Khẩu
       </v-tab>
       <v-tab-item value="forgotPassword">
         <TrnForgetPass />
