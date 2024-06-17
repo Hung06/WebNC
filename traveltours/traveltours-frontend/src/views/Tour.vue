@@ -28,7 +28,7 @@
 
           <v-row class="justify-center">
             <v-btn class="text-h5 justify-center btnComment" @click="checkAuth"
-              >Comment</v-btn
+              >Bình Luận</v-btn
             >
           </v-row>
           <div class="text-center">
@@ -36,7 +36,7 @@
               <v-form v-model="valid">
                 <v-card>
                   <v-card-title class="text-h5 grey lighten-2">
-                    Comment
+                    Bình Luận
                   </v-card-title>
                   <v-rating
                     v-model="rating"
@@ -57,7 +57,7 @@
                   <v-card-actions>
                     <v-spacer />
                     <v-btn color="primary" text @click="submitComment">
-                      Comment
+                      Bình Luận
                     </v-btn>
                   </v-card-actions>
                 </v-card>
@@ -65,7 +65,7 @@
             </v-dialog>
           </div>
 
-          <div class="text-h4">Comment</div>
+          <div class="text-h4">Bình Luận</div>
           <H3TTimeline :timeline="tour.reviews" />
         </v-col>
         <v-col cols="12" md="4">

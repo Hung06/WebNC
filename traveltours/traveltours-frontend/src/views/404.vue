@@ -12,7 +12,7 @@
       :class="$vuetify.breakpoint.mdAndUp ? 'text-h3' : 'text-h5'"
       class="mt-n6 font-weight-light primary--text"
     >
-      looks like you got lost...
+    có vẻ như bạn bị lạc...
     </p>
     <v-btn large depressed class="mt-6" rounded color="error">
       <router-link
@@ -20,7 +20,7 @@
         class="white--text text-h6"
         :to="'/'"
       >
-        go back HOME
+        Quay lại trang chủ
       </router-link>
     </v-btn>
   </div>
