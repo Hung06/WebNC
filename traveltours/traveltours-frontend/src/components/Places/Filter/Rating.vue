@@ -4,7 +4,7 @@
     item-text="label"
     :items="rating"
     prepend-icon="mdi-star-outline"
-    label="Rating"
+    label="Xếp hạng"
     hide-details
     :class="{ 'trn-no-border': hasSelectionValue() }"
   >
@@ -25,9 +25,9 @@
     data: () => ({
       rating: [
         { value: 5, label: '⭐⭐⭐⭐⭐' },
-        { value: 4, label: '⭐⭐⭐⭐ and up' },
-        { value: 3, label: '⭐⭐⭐ and up' },
-        { value: 2, label: '⭐⭐ and up' },
+        { value: 4, label: '⭐⭐⭐⭐' },
+        { value: 3, label: '⭐⭐⭐' },
+        { value: 2, label: '⭐⭐' },
       ],
     }),
   };

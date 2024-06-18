@@ -15,7 +15,7 @@
       hide-details
       :max="max"
       :min="min"
-      step="50"
+      step="500000"
       :thumb-size="38"
       thumb-label="always"
       @change="selection = $event"

@@ -38,11 +38,9 @@
   export default {
     data: () => ({
       links: [
-        'About Us',
-        'Blog',
-        'Careers',
-        'Terms & Conditions',
-        'Contact Us',
+        'Giới Thiệu',
+        'Điều Khoản Và Điều Kiện',
+        'Liên Hệ Với Chúng Tôi',
       ],
     }),
   };
